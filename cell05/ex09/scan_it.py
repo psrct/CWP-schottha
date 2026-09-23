@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from itertools import count
 import sys
 import re
 
