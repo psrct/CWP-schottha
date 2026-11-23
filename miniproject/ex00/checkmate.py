@@ -90,7 +90,7 @@ def check_diagonal_lines(grid, king_pos):
             # (idr == king_row กันเคส idc == king_col ด้วย ช่องเดียวกับ King พอดี)
             if idr == king_row or abs(idr - king_row) != abs(idc - king_col):
                 continue
-            # หาทิศทางเดินจาก King ไปหาหมาก ทีละแกน (ขึ้น/ลง, ซ้าย/ขวา)
+            # หาทิศทางเดินจาก King ไปหาหมาก ทีละแกน (-1ขึ้น/+1ลง, -1ซ้าย/+1ขวา)
             step_row = 1 if idr > king_row else -1
             step_col = 1 if idc > king_col else -1
             # ช่องคั่นกลางระหว่าง King กับหมาก (ไม่รวมทั้งสองปลาย) แยกเป็นแกนแถว/คอลัมน์
